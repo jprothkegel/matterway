@@ -10,7 +10,7 @@ interface Request {
 
 export const getBook = async (req: Request, res: Response) => {
   try {
-    const genre: string = req?.body?.genre;
+    const genre: string = req.body.genre;
     const response = await callGetBook(genre);
 
     const bookData = htmlParser(response.data);

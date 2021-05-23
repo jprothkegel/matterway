@@ -1,4 +1,4 @@
-import cheerio from "cheerio";
+import cheerio from 'cheerio';
 
 interface bookData {
   attribs: {
@@ -10,7 +10,7 @@ interface bookData {
 
 export const htmlParser = (html: string) => {
   const root = cheerio.load(html);
-  const books: any = root(".pollAnswer__bookLink");
+  const books: any = root('.pollAnswer__bookLink');
   const randomNumber: number = Math.floor(Math.random() * books.length);
   const randomNumberString: string = String(randomNumber);
   const bookSelected: bookData = books[randomNumberString].children[0];

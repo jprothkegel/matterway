@@ -1,0 +1,52 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jest",
+    "cypress"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "jest": {
+      "version": 26
+    }
+  },
+  "rules": {
+    "react/prop-types": [
+      1
+    ],
+    "no-unused-vars": [
+      1
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.spec.js"
+      ],
+      "rules": {
+        "jest/valid-expect": 0
+      }
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core';
 
 export const useBookStyles = makeStyles(() => ({
   image: {
@@ -15,7 +15,7 @@ export const useBookStyles = makeStyles(() => ({
     marginBottom: 15,
   },
   amazonButton: {
-    backgroundColor: "#FF9900",
+    backgroundColor: '#FF9900',
   },
 }));
 
@@ -32,8 +32,13 @@ export const useSuccessBookStyles = makeStyles(() => ({
   },
   button: {
     marginBottom: 15,
+    width: 200,
+    height: 40,
   },
   amazonButton: {
-    backgroundColor: "#FF9900",
+    backgroundColor: '#FF9900',
+    '&:hover': {
+      backgroundColor: '#FF990099',
+    },
   },
 }));

@@ -1,22 +1,28 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { openAmazon } from "../actions/amazonActions";
+import { createSlice } from '@reduxjs/toolkit';
+import { openAmazon } from '../actions/amazonActions';
 
 const amazonSlice = createSlice({
-  name: "amazon",
+  name: 'amazon',
   initialState: {
-    status: "idle",
+    status: 'idle',
+  },
+  reducers: {
+    resetAmazon(state) {
+      state.status = 'idle';
+    },
   },
   extraReducers: {
     [openAmazon.pending]: (state) => {
-      state.status = "loading";
+      state.status = 'loading';
     },
-    [openAmazon.error]: (state) => {
-      state.status = "error";
+    [openAmazon.rejected]: (state) => {
+      state.status = 'error';
     },
     [openAmazon.fulfilled]: (state) => {
-      state.status = "succeded";
+      state.status = 'succeded';
     },
   },
 });
 
+export const { resetAmazon } = amazonSlice.actions;
 export default amazonSlice.reducer;

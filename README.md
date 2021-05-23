@@ -10,6 +10,11 @@
   REACT_APP_AMAZON_USERNAME=fake@fake.com
   REACT_APP_AMAZON_PASSWORD=fake123
   ```
+- It's important to create a build for the back before running the whole application so the following commands are necessary:
+
+  - `cd server`
+  - `npm run build`
+
 - To run both apps simultaneously, is needed to run the following command on the root folder:
   `npm run start:dev`
 

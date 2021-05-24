@@ -30,7 +30,7 @@ const Book = () => {
       textAlign="center"
     >
       {fetchStatus === 'loading' && (
-        <Box position="absolute" top="50%" left="50%">
+        <Box position="absolute" top="50%">
           <CircularProgress size={80} />
         </Box>
       )}

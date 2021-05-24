@@ -24,13 +24,6 @@ const AppSelect = ({ ...props }) => {
           value={genre}
           onChange={handleChange}
           labelWidth={labelWidth}
-          MenuProps={{
-            getContentAnchorEl: null,
-            anchorOrigin: {
-              vertical: 'bottom',
-              horizontal: 'left',
-            },
-          }}
         >
           {fields.map((field, index) => (
             <MenuItem key={index} value={field.value}>

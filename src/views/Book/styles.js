@@ -21,8 +21,8 @@ export const useBookStyles = makeStyles(() => ({
 
 export const useSuccessBookStyles = makeStyles(() => ({
   image: {
-    width: 314,
-    height: 475,
+    width: 236,
+    height: 357,
     marginBottom: 25,
   },
   title: {

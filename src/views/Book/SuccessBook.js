@@ -32,6 +32,7 @@ const SuccessBook = ({ ...props }) => {
       border="1px solid #d9d9d9"
       borderRadius="10px"
       padding="32px"
+      maxWidth="75%"
     >
       <img src={bookImage} className={classes.image} />
       <Typography className={classes.title}>{bookName}</Typography>

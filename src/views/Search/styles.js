@@ -10,8 +10,8 @@ export const useSearchStyles = makeStyles(() => ({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    padding: 50,
+    padding: 20,
     alignItems: 'center',
-    marginTop: '15%',
+    marginTop: '25%',
   },
 }));
